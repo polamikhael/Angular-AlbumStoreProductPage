@@ -1,9 +1,7 @@
 <ul>
   <li *ngFor="let product of products">
-    <li>
-      <a [routerLink]="['/product/{{product.id}}']" [routerLinkActive]="active">
+      <a routerLink='/product/{{product.id}}' routerLinkActive='active'>
         {{product.albumName}}
       </a>
-    </li>
   </li>
 </ul>
